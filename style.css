@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(201, 28, 28);
+}
+
+form{
+    height: auto;
+    padding: 30px 20px;
+    background: rgb(83, 83, 83);
+    color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 50px 5px #000;
+}
+form .form-group{
+    margin-bottom: 20px;
+}
+form .form-group label{
+    font-size: 17px;
+    font-weight: 700;
+}
+form .form-group input[type="text"],
+form .form-group input[type="tel"],
+form .form-group input[type="password"]{
+    width: 65%;
+    padding: 10px 20px;
+    outline: none;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    font-size: 17px;
+    cursor: default;
+    border-radius: 20px;
+}
+form .form-group input[type="password"]{
+    width: 42%;
+}
+.form-group.gender input{
+    cursor: pointer;
+}
+.form-group.gender label{
+    cursor: default;
+}
+.qualification{
+    display: flex;
+}
+.qualification .qualification-box{
+    display: flex;
+}
+.qualification .qualification-box label{
+    margin-right: 5px;
+}
+.qualification .qualification-box input{
+    margin-right: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+input[type="submit"]{
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    cursor: pointer;
+    background: url('./images/button\ image.jpg') no-repeat center center / cover;
+    color: #fff;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+@media screen and (max-width:538px){
+    body{
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+    .qualification{
+        flex-direction: column;
+    }
+    form .form-group input[type="password"]{
+        width: 42%;
+    }
+    form{
+        border-radius: 0;
+        box-shadow: none;
+    }
+}
