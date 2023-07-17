@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    outline: 2px solid red;
+}
+html{
+    font-size: 62.5%;
 }
 body{
     min-height: 100vh;
@@ -14,7 +18,7 @@ body{
 }
 
 form{
-    height: auto;
+    max-width: 400px;
     padding: 30px 20px;
     background: rgb(226, 226, 226);
     border: 2px solid #000;
@@ -85,10 +89,6 @@ input[type="submit"]{
 }
 
 @media screen and (max-width:538px){
-    body{
-        justify-content: flex-start;
-        align-items: stretch;
-    }
     .qualification{
         flex-direction: column;
     }
@@ -97,4 +97,12 @@ input[type="submit"]{
         box-shadow: none;
         border: none;
     }
+}
+@media screen and (max-width:403px){
+form{
+    width: 100%;
+}
+.qualification .qualification-box label{
+    font-size: 12px;
+}
 }
