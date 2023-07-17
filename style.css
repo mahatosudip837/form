@@ -95,5 +95,6 @@ input[type="submit"]{
     form{
         border-radius: 0;
         box-shadow: none;
+        border: none;
     }
 }
