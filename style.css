@@ -31,11 +31,12 @@ form .form-group{
 form .form-group label{
     font-size: 17px;
     font-weight: 400;
+    margin-bottom: 10px;
 }
 form .form-group input[type="text"],
 form .form-group input[type="tel"],
 form .form-group input[type="password"]{
-    width: 65%;
+    width: 100%;
     padding: 10px 20px;
     outline: none;
     border: 1px solid #000000;
@@ -56,13 +57,14 @@ form .form-group input[type="password"]{
 }
 .qualification{
     display: flex;
-    
+
 }
 .qualification .qualification-box{
     display: flex;
 }
 .qualification .qualification-box label{
     margin-right: 5px;
+    margin-top: 10px;
 }
 .qualification .qualification-box input{
     margin-right: 5px;
